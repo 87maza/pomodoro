@@ -1,0 +1,50 @@
+/*===========================================
+General Styles
+=============================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  background-repeat: no-repeat;
+  /*background-position: center; looks better off-center*/
+  background-size: cover;
+
+}
+
+html{
+  /*position: relative;*/
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background-image: url('../img/zenbg.jpg');
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+html:before{
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#F4D03F,#16A085);
+	opacity: .4;
+}
+.container{
+  position: relative;
+}
+
+button{
+  position: relative;
+  z-index: 10;
+}
