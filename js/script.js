@@ -24,10 +24,10 @@ var deleteLabels = document.getElementsByClassName('flip-clock-label');
 
 
 var workscreen = document.getElementById('work-screen');
-workscreen.innerHTML = workMinutes + " minutes";
+workscreen.innerHTML = workMinutes;
 
 var chillscreen = document.getElementById('chill-screen');
-chillscreen.innerHTML = chillMinutes + " minutes";
+chillscreen.innerHTML = chillMinutes;
 
 var workIncrease = document.getElementById('increase-work');
 workIncrease.addEventListener('click', wincreaser);

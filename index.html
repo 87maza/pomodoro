@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Martin Maza | Johnny Pomodoro</title>
         <meta name="description" content="">
-        <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
         <link rel="icon" type="image/png" sizes="16x16" href="img/android-icon-192x192.png"> 
         <link rel="stylesheet" href="css/flipclock.css">
         <link rel="stylesheet" href="css/normalize.css">
@@ -13,30 +13,33 @@
   </head>
     <body>
         <div class="container">
-
+            <h1>Johnny Pomodoro.</h1>
             <div class="work">
-                <div class="work-timer">
-                </div>
                 <div class="work-adjust">
-                    <p id="work-screen"></p>
+                    <p class="work-screen"><span id='work-screen'></span> minutes</p>
                     <button class="adjustments" id="decrease-work" onclick="">-</button>
                     <button class="adjustments" id="increase-work"onclick="">+</button>
                     <button class="adjustments reset" onclick="">Reset</button>
-                    <button id="work-set" onclick="workstart()">Start!</button>
+                    <button class="adjustments" id="work-set" onclick="workstart()">Start!</button>
+                </div>
+                <div class="work-timer">
                 </div>
             </div>
             <div class="chill">
-                <div class="chill-timer">
-                </div>
                 <div class="chill-adjust">
-                    <p id="chill-screen"></p>
+                    <p class="chill-screen"><span id='chill-screen'></span> minutes</p>
                     <button class="adjustments" id="decrease-chill" onclick="">-</button>
                     <button class="adjustments" id="increase-chill"onclick="">+</button>
                     <button class="adjustments reset" onclick="">Reset</button>
-                    <button id="chill-set" onclick="chillstart()">Start!</button>
+                    <button class="adjustments" id="chill-set" onclick="chillstart()">Start!</button>
                 </div><!-- end of work-adjust div -->
+                <div class="chill-timer">
+                </div>
             </div>
         </div>
+        <audio id="work-comp" src="http://www.soundjay.com/ambient/boarding-accouncement-1.mp3"></audio>
+        <audio id="work-comp" src="http://www.soundjay.com/nature/fire-1.mp3"></audio>
+
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="js/flipclock.min.js"></script>
         <script src="js/script.js"></script>
