@@ -83,13 +83,22 @@ function cdecreaser() {
     }
 }
 
-
-
 function workstart(){
     work.start();
+
+    var complete = document.getElementById('work-comp')
+    complete.load();
+    setTimeout(function(){
+        complete.play();
+    },work.getTime().time*1000);
 }
 
 function chillstart(){
     chill.start();
+    var complete = document.getElementById('chill-comp')
+    complete.load();
+    setTimeout(function(){
+        complete.play();
+    },work.getTime().time*1000);
 }
 
